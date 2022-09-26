@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home language={language} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/services" element={<Services language={language}/>} />
           <Route path="/servicesDetails" element={<ServicesDetails />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolioDetails" element={<PortfolioDetails />} />

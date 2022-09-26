@@ -8,16 +8,16 @@ import HomeHeader from '../Home/HomeHeader/HomeHeader';
 import HomeServices from '../Home/HomeServices/HomeServices';
 import HomeSecondServices from '../Home/HomeSecondServices/HomeSecondServices';
 
-const Services = () => {
+const Services = ({language}) => {
    return (
       <>
          <PageHelmet pageTitle="Services" />
 
          <HomeHeader/>
          <CommonPageHeader title="Services" subtitle="Services" />
-         <HomeServices />
+         <HomeServices language={language}/>
          <HomeCapabilities/>
-         <HomeSecondServices />
+         <HomeSecondServices language={language}/>
          <CommonCtaArea/>
          <Footer/>
       </>
